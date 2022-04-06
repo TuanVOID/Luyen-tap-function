@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = "aabbcbdca";
+    let arr = [];
+    let arr2 = [];
+    for (let i = 0; i < s1.length; i++) {
+        let x = s1[i];
+        for (let j = i + 1; j < s1.length; j++) {
+            if (x === s1[j] && arr2.indexOf(x) == -1) {
+                arr2.push(x);
+            }
+        }
+    }
+    for (let i = 0; i < arr2.length; i++) {
+        let count = 0;
+        for (let j = 0; j < s1.length; j++) {
+            if (arr2[i] == s1[j]) {
+                count++;
+            }
+        }
+        arr.push([arr2[i], count]);
+    }
+    console.log(arr)
+</script>
+</body>
+</html>
