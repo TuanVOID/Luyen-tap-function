@@ -7,17 +7,18 @@
 <body>
 <script>
     let txt = prompt("nhap chuoi dau vao");
-    let index = false;
+    let index;
     function isPalindrome(txt) {
         for (let i = 0; i < txt.length % 2; i++) {
             if (txt[i] == txt[txt.length - 1 - i]) {
-                alert(txt + " la chuoi doi xung");
-                return index = true ;
+                return index = true;
             } else index= false;
-        } if (index) {alert(txt + " la chuoi doi xung")}
-        else {alert(txt + " khong phai la chuoi doi xung")}
+        }
     }
     isPalindrome(txt);
+    if (index) {alert(txt + " la chuoi doi xung")}
+    else {alert(txt + " khong phai la chuoi doi xung")}
+
 </script>
 </body>
 </html>
