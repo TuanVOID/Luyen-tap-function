@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>foot metter swap</title>
+</head>
+<body>
+<!--function footToMeter(foot)-->
+<!--function meterToFoot(meter)-->
+<!--meter = 0.305 * foot-->
+<!--foot = 3.279 * meter-->
+<table>
+    <tr>
+        <th> Foot </th>
+        <th> Metter </th>
+    </tr>
+    <tr>
+        <td> <input type="text" id="foot"> <button onclick="footToMeter()"> Convert</button></td>
+        <td id="result1"> </td>
+    </tr>
+</table>
+<script>
+    let a = +document.getElementById("foot").value;
+    let meter;
+    console.log(a);
+    function footToMeter() {
+        meter = 0,305 * a;
+        document.getElementById("result1").innerHTML = meter;
+    }
+</script>
+</body>
+</html>

@@ -20,19 +20,21 @@
         return true;
     }
 
-    let x = prompt("nhap vao so luong so nguyen to can in ra")
-    function listPrime() {
+    let x = [];
+    function countPrime(N) {
         let count = 0;
-        let y = 0;
-        while (count < x) {
-            if (checkPrime(y) === true) {
-                count++;
-                console.log(y + " la so nguyen to")
+        for (let i = 2; i < N ; i++) {
+            if (checkPrime(i) === true) {
+                x.push(i);
+                count++
             }
-            y++;
         }
+        console.log(count);
     }
-listPrime(x);
+    countPrime(1000);
+    console.log(x);
+
+
 </script>
 </body>
 </html>

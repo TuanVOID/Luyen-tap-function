@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT su dung ham 2</title>
+</head>
+<body>
+Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được. <br/>
+
+<button onclick="square()"> Tinh binh phuong</button>
+<br>
+<br>
+Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được <br>
+<button onclick="circleArea()"> Tinh dien tich hinh tron <br></button>
+<br/>
+<br>
+
+<button onclick="circleDiameter()"> Tinh chu vi hinh tron</button>
+<br>
+<br>
+Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được. <br>
+<button onclick="factorial()"> Tinh giai thua</button>
+<br>
+<br>
+Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về
+false.
+<br>
+
+Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất. <br>
+<button onclick="soNguyenNhoNhat()"> So nguyen nho nhat</button>
+<br>
+<br>
+Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về
+true, ngược lại trả về false.
+<br>
+<button onclick="soNguyenDuong()"> Check so nguyen duong</button>
+<br>
+<br>
+Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó. <br>
+
+Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó. <br>
+
+Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+<br>
+</body>
+<script>
+    function square() {
+        let a = +prompt(" nhap vao so can tinh ");
+        b = a * a;
+        alert(b);
+    }
+
+    function circleArea() {
+        let r = +prompt("Nhap vao ban kinh hinh tron")
+        S = r * r * 3.14;
+        alert("Dien tich hinh tron la " + S + " m2");
+    }
+
+    function circleDiameter() {
+        let r = +prompt("Nhap vao ban kinh hinh tron")
+        C = 2 * r * 3.14;
+        alert("chu vi hinh tron la" + C)
+    }
+
+    function factorial() {
+        let a = +prompt(" nhap vao so can tinh giai thua");
+        let b = 1;
+        for (let i = 1; i < a; i++) {
+            b = a * i;
+        }
+        alert("!" + a + " = " + b)
+    }
+
+    function soNguyenNhoNhat() {
+        x = +prompt("nhap vao so nguyen");
+        if ( x % 1 === 0)
+
+    }
+ function importArray() {
+        a = prompt("so luong phan tu muon nhap");
+     for (let i = 0; i < a; i++) {
+         alert()
+     }
+
+ }
+    function soNguyenDuong() {
+
+    }
+</script>
+</html>
